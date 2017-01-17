@@ -1,0 +1,18 @@
+angular.module("route",["ngRoute"])
+    .config("$routeProvider",function($routeProvider){
+        $routeProvider.when("/",{
+            templateUrl:"/tpl/index.html"
+        }).when("/cate:id",{
+            templateUrl:"/tpl/category.html"
+        }).when("/list:id",{
+            templateUrl:"/tpl/list.html"
+        }).when("/show",{
+            templateUrl:"/tpl/show.html"
+        }).when("/bookshelf",{
+            templateUrl:"tpl/bookshelf.html"
+        }).when("/bookstore",{
+            templateUrl:"tpl/bookstore.html"
+        }).when("/mine",{
+            templateUrl:"tpl/mine.html"
+        })
+    })
