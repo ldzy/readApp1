@@ -1,1 +1,1 @@
-angular.module("readapp",["route","controllers"])
+angular.module("readapp",["route"])

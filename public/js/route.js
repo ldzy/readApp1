@@ -1,7 +1,8 @@
 angular.module("route",["ngRoute"])
-    .config("$routeProvider",function($routeProvider){
+    .config(["$routeProvider",function($routeProvider){
         $routeProvider.when("/",{
-            templateUrl:"/tpl/index.html"
+            templateUrl:"/tpl/index.html",
+            controller:"index"
         }).when("/cate:id",{
             templateUrl:"/tpl/category.html"
         }).when("/list:id",{
@@ -15,4 +16,4 @@ angular.module("route",["ngRoute"])
         }).when("/mine",{
             templateUrl:"tpl/mine.html"
         })
-    })
+    }])
